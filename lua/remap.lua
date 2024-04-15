@@ -4,6 +4,7 @@ vim.keymap.set('n', '<leader>d', vim.lsp.buf.hover) -- why the fuck is this so s
 vim.cmd([[
     nnoremap <C-Space>, :-tabmove<CR>
     nnoremap <C-Space>. :+tabmove<CR>
+    nnoremap <C-Space>f :Neotree<CR>
     map <leader>e :lua vim.diagnostic.open_float(0, {scope = "line"})<CR>
     map <leader>. :tabn<CR>
     map <leader>, :tabp<CR>
@@ -19,4 +20,5 @@ vim.cmd([[
     map <leader>8 :8tabnext<CR>
     map <leader>9 :9tabnext<CR>
     map <leader>0 :10tabnext<CR>
+    map <C-S-f> :Neotree close<CR>
 ]])
