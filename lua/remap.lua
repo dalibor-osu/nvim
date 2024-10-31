@@ -21,4 +21,8 @@ vim.cmd([[
     map <leader>9 :9tabnext<CR>
     map <leader>0 :10tabnext<CR>
     map <C-S-f> :Neotree close<CR>
+    nnoremap <A-j> :m +1<CR>==
+    nnoremap <A-k> :m -2<CR>==
+    vnoremap <A-k> :m '<-2<CR>gv=gv
+    vnoremap <A-j> :m '>+1<CR>gv=gv
 ]])

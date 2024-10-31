@@ -77,6 +77,8 @@ use ('andweeb/presence.nvim')
 -- Better Haskell syntax highlighting
 use ('neovimhaskell/haskell-vim')
 
+use ('ThePrimeagen/vim-be-good')
+
 use {
   "nvim-neo-tree/neo-tree.nvim",
     branch = "v3.x",
