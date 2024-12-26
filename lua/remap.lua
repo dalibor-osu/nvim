@@ -26,3 +26,14 @@ vim.cmd([[
     vnoremap <A-k> :m '<-2<CR>gv=gv
     vnoremap <A-j> :m '>+1<CR>gv=gv
 ]])
+
+-- Accept lsp quickfix
+vim.keymap.set('n', '<leader>qf',
+    function()
+        vim.lsp.buf.code_action({
+            filter = function(a) return a.isPreferred end,
+            apply = true
+        })
+    end,
+    { noremap = true, silent = true }
+)

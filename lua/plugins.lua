@@ -65,9 +65,6 @@ use({
 	end,
 })
 
--- copilot
-use('github/copilot.vim')
-
 -- Catppuccin theme
 use { "catppuccin/nvim", as = "catppuccin" }
 
@@ -77,8 +74,10 @@ use ('andweeb/presence.nvim')
 -- Better Haskell syntax highlighting
 use ('neovimhaskell/haskell-vim')
 
+-- Trying to get good at vim
 use ('ThePrimeagen/vim-be-good')
 
+-- File tree
 use {
   "nvim-neo-tree/neo-tree.nvim",
     branch = "v3.x",
