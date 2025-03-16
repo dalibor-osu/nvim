@@ -25,6 +25,8 @@ vim.cmd([[
     nnoremap <A-k> :m -2<CR>==
     vnoremap <A-k> :m '<-2<CR>gv=gv
     vnoremap <A-j> :m '>+1<CR>gv=gv
+    nnoremap <leader>lf :lua vim.lsp.buf.format()<CR>
+    vnoremap <leader>lc :lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<CR>
 ]])
 
 -- Accept lsp quickfix
