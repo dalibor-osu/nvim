@@ -47,12 +47,12 @@ return require('packer').startup(function(use)
 
     use {
         "windwp/nvim-ts-autotag",
-        config = function ()
+        config = function()
             require('nvim-ts-autotag').setup({
                 opts = {
                     -- Defaults
-                    enable_close = true, -- Auto close tags
-                    enable_rename = true, -- Auto rename pairs of tags
+                    enable_close = true,          -- Auto close tags
+                    enable_rename = true,         -- Auto rename pairs of tags
                     enable_close_on_slash = false -- Auto close on trailing </
                 },
                 -- Also override individual filetype configs, these take priority.
@@ -117,4 +117,14 @@ return require('packer').startup(function(use)
             require('Comment').setup()
         end
     }
+
+    use 'wakatime/vim-wakatime'
+
+    use 'https://github.com/nvim-neotest/nvim-nio'
+
+    -- nvim-dap core
+    use 'mfussenegger/nvim-dap'
+
+    -- Optional: Debugger UI
+    use { 'rcarriga/nvim-dap-ui', requires = { 'mfussenegger/nvim-dap' } }
 end)
