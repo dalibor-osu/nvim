@@ -5,6 +5,7 @@ return {
   {
     "vim-airline/vim-airline",
     name = "airline",
+    config = config
   },
   {
     "vim-airline/vim-airline-themes",
